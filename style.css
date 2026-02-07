@@ -6,36 +6,73 @@ body {
 
 /* HEADER */
 header {
-  background-color: #87CEEB;
-  padding: 30px 20px;
+  background: linear-gradient(to right, #87CEEB, #6ec6e9);
+  padding: 50px 20px;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 36px;
   color: #003366;
 }
 
 header p {
+  margin-top: 10px;
+  font-size: 18px;
   color: #004c80;
 }
 
 /* NAVIGATION */
 nav {
+  nav {
   background-color: #003366;
+  padding: 12px;
   text-align: center;
-  padding: 10px;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
+  color: #ffffff;
   text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* SECTIONS */
 section {
+  section {
+  max-width: 900px;
+  margin: 30px auto;
   padding: 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+button,
+a.button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #005fa3;
 }
 
 /* FOOTER */
