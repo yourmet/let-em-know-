@@ -1,15 +1,12 @@
-// Welcome message
-window.onload = function () {
-  console.log("Em Know Entertainment website loaded");
-};
+// Button click feedback
+const buttons = document.querySelectorAll("button, .button");
 
-// Simple form validation
-const form = document.querySelector("form");
-
-if (form) {
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Thank you! We will contact you shortly.");
-    form.reset();
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.style.opacity = "0.8";
+    setTimeout(() => {
+      btn.style.opacity = "1";
+    }, 150);
   });
-}
+});
+
