@@ -1,0 +1,20 @@
+/* IMAGE SLIDER STYLING */
+.slider {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
