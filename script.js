@@ -1,33 +1,15 @@
-// IMAGE SLIDER LOGIC
-const slides = document.querySelectorAll(".slide");
-let currentSlide = 0;
+// Welcome message
+window.onload = function () {
+  console.log("Em Know Entertainment website loaded");
+};
 
-function showSlide(index) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[index].classList.add("active");
+// Simple form validation
+const form = document.querySelector("form");
+
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Thank you! We will contact you shortly.");
+    form.reset();
+  });
 }
-
-document.getElementById("next").addEventListener("click", function () {
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-  showSlide(currentSlide);
-});
-
-document.getElementById("prev").addEventListener("click", function () {
-  currentSlide--;
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-  showSlide(currentSlide);
-});
-
-// Auto-slide every 4 seconds
-setInterval(function () {
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-  showSlide(currentSlide);
-}, 4000);
