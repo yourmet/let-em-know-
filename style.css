@@ -89,3 +89,9 @@ footer {
   margin: 0 auto;
   padding: 20px;
 }
+
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
