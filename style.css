@@ -1,20 +1,47 @@
-/* IMAGE SLIDER STYLING */
-.slider {
-  max-width: 300px;
-  margin: 20px auto;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-.slide {
-  width: 100%;
-  display: none;
+/* HEADER */
+header {
+  background-color: #87CEEB;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-.slide.active {
-  display: block;
+header h1 {
+  margin: 0;
+  color: #003366;
 }
 
-button {
-  padding: 8px 15px;
-  margin: 5px;
-  cursor: pointer;
+header p {
+  color: #004c80;
+}
+
+/* NAVIGATION */
+nav {
+  background-color: #003366;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+section {
+  padding: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
